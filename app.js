@@ -366,6 +366,21 @@ function initUserToggle(){
     }
   });
 }
+function initSelectorsAndComputed() {
+  var navLinks = document.querySelectorAll(".main-nav a");
+
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].onclick = function () {
+     
+      var actives = document.getElementsByClassName("active");
+      while (actives.length) actives[0].classList.remove("active");
+
+      this.classList.add("active");
+      var cs = getComputedStyle(this);
+      document.body.style.borderTop = "6px solid " + cs.color;
+    };
+  }
+}
 
 
 window.onload = function(){
@@ -377,6 +392,8 @@ window.onload = function(){
   initFavorites();
   initCanvas();
   initSVG();
+  initSelectorsAndComputed();
 };
+
 
 

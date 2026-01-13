@@ -1,0 +1,7 @@
+[
+  {"id":"p1","name":"Arturo Coello","country":"Spania","rank":1,"img":"https://upload.wikimedia.org/wikipedia/commons/8/8e/Arturo_Coello_2023.jpg"},
+  {"id":"p2","name":"Agustín Tapia","country":"Argentina","rank":1,"img":"https://upload.wikimedia.org/wikipedia/commons/4/49/Agustin_Tapia_2023.jpg"},
+  {"id":"p3","name":"Alejandro Galán","country":"Spania","rank":2,"img":"https://upload.wikimedia.org/wikipedia/commons/7/7a/Alejandro_Galan_2023.jpg"},
+  {"id":"p4","name":"Juan Lebrón","country":"Spania","rank":3,"img":"https://upload.wikimedia.org/wikipedia/commons/2/2a/Juan_Lebron_2022.jpg"}
+]
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Padel pentru Începători - Padel România</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <span class="logo-ball"></span>
+        <h1>Padel România</h1>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Acasă</a></li>
+            <li class="dropdown">
+                <a href="reguli.html">Despre padel</a>
+                <ul class="submenu">
+                    <li><a href="reguli.html">Reguli de bază</a></li>
+                    <li><a href="echipament.html">Echipament</a></li>
+                </ul>
+            </li>
+            <li><a href="cluburi.html">Jucători</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   <div class="user-area">
+  <button id="userToggle" aria-label="Cont utilizator">
+    👤
+  </button>
+
+  <section class="auth-bar" id="authBox">
+    <form id="loginForm">
+      <label>
+        Utilizator
+        <input id="loginUser" type="text" required>
+      </label>
+
+      <label>
+        Parolă
+        <input id="loginPass" type="password" required>
+      </label>
+
+      <button type="submit">Login</button>
+      <button type="button" id="logoutBtn">Logout</button>
+
+      <span id="authStatus"></span>
+    </form>
+  </section>
+</div>
+
+</header>
+
+<main>
+    <section class="hero">
+        <article class="hero-content">
+            <h2 class="hero-title">Descoperă padelul</h2>
+            <p>
+                Padelul este un sport de rachetă jucat de obicei în echipe de câte doi,
+                combinând elemente din tenis și squash. Este ușor de învățat,
+                accesibil tuturor vârstelor și foarte distractiv.
+            </p>
+            <a href="reguli.html" class="btn btn-primary">Învață regulile</a>
+        </article>
+
+        <aside class="hero-aside">
+            <h3>De ce să joci padel?</h3>
+            <ul>
+                <li>Sport social – jucat în echipe</li>
+                <li>Ușor de învățat</li>
+                <li>Potrivit pentru toate vârstele</li>
+                <li>Îmbunătățește reflexele</li>
+            </ul>
+        </aside>
+    </section>
+
+    <section class="controls">
+        <h2>Personalizează pagina</h2>
+
+        <label for="fontRange">Mărime font</label>
+        <input id="fontRange" type="range" min="15" max="24" step="1" value="18">
+        <span id="fontValue">18</span>
+
+        <button id="randColorBtn" type="button">Culoare random</button>
+
+        <p id="rotatingTip"></p>
+    </section>
+
+
+    <section class="section-intro">
+        <header>
+            <h2>Ce găsești pe acest site?</h2>
+            <p>
+                Regulile jocului, echipament recomandat și prezentarea jucătorilor
+                profesioniști din circuitul internațional.
+            </p>
+        </header>
+      
+        
+         <div class="cards-grid">
+            <article class="card">
+                <h3>Reguli de joc</h3>
+                <p>Descoperă cum se punctează și cum se servește.</p>
+                <a href="reguli.html" class="card-link">Vezi reguli</a>
+            </article>
+
+            <article class="card">
+                <h3>Echipament</h3>
+                <p>Află ce rachetă, pantofi și accesorii sunt recomandate.</p>
+                <a href="echipament.html" class="card-link">Vezi echipament</a>
+            </article>
+
+            <article class="card">
+                <h3>Jucători profesioniști</h3>
+                <p>Inspiră-te de la cei mai buni jucători din lume.</p>
+                <a href="cluburi.html" class="card-link">Vezi jucători</a>
+            </article>
+        </div>
+    </section>
+    
+    
+        <section class="info-box">
+            <h2>Informații utile</h2>
+            <ul>
+            <li>Padelul se joacă preponderent 2 vs 2.</li>
+            <li>Pereții fac parte din teren și pot fi folosiți strategic.</li>
+            <li>Rachetele pot fi închiriate la majoritatea cluburilor.</li>
+            <li>Terenurile sunt adesea acoperite, deci sportul se joacă tot anul.</li>
+        </ul>
+    </section>
+</main>
+
+<footer id="contact">
+    <section class="footer-content">
+        <article>
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:info@padel-romania.ro">info@padel-romania.ro</a></p>
+            <p>Instagram: @padel_romania</p>
+        </article>
+    </section>
+    <p class="footer-copy">&copy; 2025 Padel România</p>
+</footer>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

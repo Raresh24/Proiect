@@ -48,7 +48,7 @@ function initAuth() {
     var u = $("loginUser").value.trim();
     var p = $("loginPass").value;
 
-    loadJSON("data/users.json", function (users) {
+    loadJSON("users.json", function (users) {
       var ok = false;
       var i;
 
@@ -231,7 +231,7 @@ function initPlayers() {
   var grid = $("playersGrid");
   if (!grid) return;
 
-  loadJSON("data/players.json", function (players) {
+  loadJSON("players.json", function (players) {
     players.sort(function (a, b) {
       return a.rank - b.rank;
     });
@@ -378,4 +378,5 @@ window.onload = function(){
   initCanvas();
   initSVG();
 };
+
 

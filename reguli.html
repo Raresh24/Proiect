@@ -27,6 +27,31 @@
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </nav>
+    <div class="user-area">
+  <button id="userToggle" aria-label="Cont utilizator">
+    👤
+  </button>
+
+  <section class="auth-bar" id="authBox">
+    <form id="loginForm">
+      <label>
+        Utilizator
+        <input id="loginUser" type="text" required>
+      </label>
+
+      <label>
+        Parolă
+        <input id="loginPass" type="password" required>
+      </label>
+
+      <button type="submit">Login</button>
+      <button type="button" id="logoutBtn">Logout</button>
+
+      <span id="authStatus"></span>
+    </form>
+  </section>
+</div>
+
 </header>
 
 <main>
@@ -82,13 +107,41 @@
             </ul>
         </aside>
     </section>
+    <section class="signup">
+  <h2>Înscriere</h2>
+
+  <form id="signupForm" novalidate>
+    <label for="sName">Nume</label>
+    <input id="sName" type="text" required>
+
+    <label for="sEmail">Email</label>
+    <input id="sEmail" type="text" required>
+
+    <label for="sPhone">Telefon</label>
+    <input id="sPhone" type="text" required placeholder="07xx xxx xxx">
+
+    <label>
+      <input id="sTerms" type="checkbox">
+      Accept termenii
+    </label>
+
+    <button type="submit">Trimite</button>
+    <p id="formMsg"></p>
+  </form>
+</section>
+
 </main>
 
 <footer>
     <section class="footer-content">
         <article>
-            <h3>Continuă învățarea</h3>
-            <p>Joacă meciuri amicale pentru a înțelege aplicarea regulilor.</p>
+            <h4>
+            <p>Fun fact: Padelul a întrecut baschetul si tenisul, ca număr de sportivi, atat în Spania și Mexic,
+                 cât si în multe alte țări! </p>
+                 
+            <p>Zi de zi, copii de prin toata țara descoperă acest sport distractiv, ceea ce poate duce 
+                către un viitor strălucit în padelul românesc. </p>
+        </h4>
         </article>
         <article>
             <h3>Înapoi</h3>
@@ -97,5 +150,7 @@
     </section>
     <p class="footer-copy">&copy; 2025 Padel România</p>
 </footer>
+<script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>
